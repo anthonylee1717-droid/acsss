@@ -1,1 +1,20 @@
-{"Name":"BodyEqualizer","DisplayName":"Body Equalizer","GameVersion":1.177,"Version":1.01,"Desc":"[作者]\r\n    Nuclearmonkees\r\n[简介]\r\n\nMoves phallus remolding to limbic system, accessible by both sexes so you can make female body cultivators without missing out.","Author":"Nuclearmonkee","UIPackage":null,"ID":"2407088278","Flag":496241456,"Tags":["Function","Usability","ExcludeRealmsHeaven","Non-Chinese"],"IncreasedDesc":"","IsInsideCreat":false,"Previews":[],"ParentModInfo":null}
+{
+  "LastRelease": null,
+  "LoadInfo": false,
+  "Name": "BodyEqualizer",
+  "DisplayName": "Body Equalizer",
+  "GameVersion": 1.7,
+  "Version": "1.01",
+  "Desc": "[作者]\r\n    Nuclearmonkees\r\n[简介]\r\n\nMoves phallus remolding to limbic system, accessible by both sexes so you can make female body cultivators without missing out.",
+  "Author": "Nuclearmonkee",
+  "UIPackage": null,
+  "ID": "2407088278",
+  "Flag": 0,
+  "Tags": null,
+  "IncreasedDesc": "",
+  "IsInsideCreat": false,
+  "Previews": null,
+  "Dependencies": null,
+  "Url": "https://github.com/anthonylee1717-droid/acsss",
+  "VersionValue": 101.0
+}
