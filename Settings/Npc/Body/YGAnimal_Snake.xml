@@ -1,0 +1,141 @@
+<BodyDefs><List>
+
+<BodyDef Name="YGAnimal_SnakeBody">
+	<Groups>
+		<Group Name="RightArmMovement" MaxValue="0.6"/>
+		<Group Name="LeftArmMovement" MaxValue="0.6"/>
+		<Group Name="LeftLegMovement" MaxValue="0.6"/>
+		<Group Name="RightLegMovement" MaxValue="0.6"/>
+	</Groups>
+	
+	<Part Name="Trunk" Kind="Virtual" Rate="1">
+		<Parts>
+			<li Name="AllHead" DisplayName="Head"  Kind="Virtual" Rate="0.05">
+				<Parts>
+					<li Name="Skull" DisplayName="Skull" Kind="Bone" Rate="0.5" Deadly="1"/>
+
+					<li Name="Brain" DisplayName="Brain" Kind="Organ" Rate="0.1" Deadly="1" BPQLabelBaseCache="BaseCache_Brain">
+<!--					<Links>
+							<li>LeftEye</li>
+						</Links>-->
+						<Function>
+							<li Kind="Consciousness" Value="0.8"/>
+						</Function>
+					</li>
+					
+					<li Name="LeftEye" DisplayName="Left Eye" Kind="Organ" Rate="0.1" BPQLabelBaseCache="BaseCache_Eye">
+						<Function>
+							<li Kind="Feeling" Value="0.4"/>
+						</Function>
+					</li>
+					<li Name="RightEye" DisplayName="Right Eye" Kind="Organ" Rate="0.1" BPQLabelBaseCache="BaseCache_Eye">
+						<Function>
+							<li Kind="Feeling" Value="0.4"/>
+						</Function>
+					</li>
+					<li Name="Nose" DisplayName="Nose" Kind="Organ" Rate="0.1" BPQLabelBaseCache="BaseCache_Nose"/>
+					<li Name="Mouth" DisplayName="Mouth" Kind="Organ" Rate="0.1" BPQLabelBaseCache="BaseCache_Mouth"/>
+					<li Name="Throat" DisplayName="Neck" Kind="Organ" Rate="0.2" Deadly="1" BPQLabelBaseCache="BaseCache_Throat"/>
+					<li Name="UpCanineTooth" DisplayName="Upper Fangs" Kind="Bone" Rate="0.05"/>
+					<li Name="DownCanineTooth" DisplayName="Lower Fangs" Kind="Bone" Rate="0.05"/>
+					<li Name="LongTongue" DisplayName="Long Tongue" Kind="Organ" Rate="0.1"/>
+					<li Name="Head" DisplayName="Head" Kind="Organ" Rate="1" Deadly="1"  CantPractice="1"/>
+					<li Name="LimbicSystem" DisplayName="Limbic System" Kind="Organ" Rate="0.1" Deadly="1" BPQLabelBaseCache="BaseCache_Limbic"/>
+				</Parts>
+			</li>
+			
+			<li Name="AllBody" DisplayName="Body" Kind="Virtual" Rate="0.28" Deadly="1">
+				<Parts>
+					<li Name="SamllRibs" DisplayName="Dense Ribs" Kind="Bone" Rate="0.05"/>
+					<li Name="Spine" DisplayName="Spine" Kind="Bone" Rate="0.02" BPQLabelBaseCache="BaseCache_Spine">
+						<Function>
+							<li Kind="Movement" Value="1"/>
+							<li Kind="Operation" Value="1"/>
+						</Function>
+					</li>
+					<li Name="Heart" DisplayName="Heart" Kind="Organ" Rate="0.01" Deadly="1" BPQLabelBaseCache="BaseCache_Heart"/>
+					<li Name="Liver" DisplayName="Liver" Kind="Organ" Rate="0.01" Deadly="1" BPQLabelBaseCache="BaseCache_Liver"/>
+					<li Name="Spleen" DisplayName="Spleen" Kind="Organ" Rate="0.01" Deadly="1" BPQLabelBaseCache="BaseCache_Spleen"/>
+					<li Name="Lung" DisplayName="Lungs" Kind="Organ" Rate="0.02" Deadly="1" BPQLabelBaseCache="BaseCache_Lung"/>
+					<li Name="Kidney" DisplayName="Kidneys" Kind="Organ" Rate="0.02" Deadly="1" BPQLabelBaseCache="BaseCache_Kidney"/>
+					<li Name="Stomach"  DisplayName="Stomach" Kind="Organ" Rate="0.01" BPQLabelBaseCache="BaseCache_Stomach"/>
+					<li Name="Intestines" DisplayName="Intestines" Kind="Organ" Rate="0.01" BPQLabelBaseCache="BaseCache_Intestines"/>
+					<li Name="Genitals" DisplayName="Phallus" Kind="Organ" Rate="0.005" CantPractice="1"/>
+					<li Name="BodyFlesh" DisplayName="Body Muscles" Kind="Flesh" Rate="0.05"/>
+					<li Name="BodyScale" DisplayName="Scales" Kind="Flesh" Rate="0.05"/>
+					<li Name="Body" DisplayName="Torso" Kind="Organ" Rate="1" Deadly="1"  CantPractice="1"/>
+					<li Name="LongTail" DisplayName="Long Tail" Kind="Bone" Rate="0.1"/>
+				</Parts>
+			</li>
+			
+			
+			<li Name="TheWholeBody" DisplayName="Whole Body" Kind="Virtual" Rate="0" Deadly="1">
+				<Function>
+					<li Kind="Consciousness" Value="1"/>
+				</Function>
+			</li>
+			
+			<li Name="Meridian" DisplayName="Meridians" Kind="Virtual" Rate="0" Deadly="1">
+				<Parts>
+					<li Name="UpperElixirField" DisplayName="Upper Dantian" Kind="Meridian" Rate="0.04">
+						<Function>
+							<li Kind="Meridian" Value="0.9"/>
+						</Function>
+					</li>
+					<li Name="MiddleElixirField" DisplayName="Lower Dantian" Kind="Meridian" Rate="0.04">
+						<Function>
+							<li Kind="Meridian" Value="0.9"/>
+						</Function>
+					</li>
+					<li Name="LowerElixirField" DisplayName="Lower Dantian" Kind="Meridian" Rate="0.04">
+						<Function>
+							<li Kind="Meridian" Value="0.9"/>
+						</Function>
+					</li>
+					<li Name="RenChannel" DisplayName="Conceptor Vessel" Kind="Meridian" Rate="0.08">
+						<Function>
+							<li Kind="Meridian" Value="0.7"/>
+						</Function>
+					</li>
+					<li Name="DuChannel" DisplayName="Governing Vessel" Kind="Meridian" Rate="0.08">
+						<Function>
+							<li Kind="Meridian" Value="0.7"/>
+						</Function>
+					</li>
+					<li Name="ChongChannel" DisplayName="Penetrating Vessel" Kind="Meridian" Rate="0.12">
+						<Function>
+							<li Kind="Meridian" Value="0.5"/>
+						</Function>
+					</li>
+					<li Name="BeltChannel" DisplayName="Girdle Vessel" Kind="Meridian" Rate="0.12">
+						<Function>
+							<li Kind="Meridian" Value="0.5"/>
+						</Function>
+					</li>
+					<li Name="YinWeiChannel" DisplayName="Yin Linking Vessel" Kind="Meridian" Rate="0.12">
+						<Function>
+							<li Kind="Meridian" Value="0.3"/>
+						</Function>
+					</li>
+					<li Name="YinHeelChannel" DisplayName="Yin Heel Vessel" Kind="Meridian" Rate="0.12">
+						<Function>
+							<li Kind="Meridian" Value="0.3"/>
+						</Function>
+					</li>
+					<li Name="YangWeiChannel" DisplayName="Yang Linking Vessel" Kind="Meridian" Rate="0.12">
+						<Function>
+							<li Kind="Meridian" Value="0.3"/>
+						</Function>
+					</li>
+					<li Name="YangHeelChannel" DisplayName="Yang Heel Vessel" Kind="Meridian" Rate="0.12">
+						<Function>
+							<li Kind="Meridian" Value="0.3"/>
+						</Function>
+					</li>
+				</Parts>
+			</li>
+		</Parts>
+	</Part>
+</BodyDef>
+
+</List></BodyDefs>
